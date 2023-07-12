@@ -1,0 +1,416 @@
+@charset "utf-8";
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+/* =============================메뉴바============================ */
+/* header */
+header{
+    position: fixed;
+    left: 0; top: 0; right: 0;
+    background: #333;
+    box-shadow: 1px 1px 2px 2px #222;
+    z-index: 100;
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li{
+    margin: 0 20px;
+}
+/* ===========================풀페이지============================= */
+.fp-tableCell{
+    text-align: center;
+}
+
+/* 플레이 아이콘 모양 클래스 이름 */
+/* 커스텀 할 수 있음 */
+
+#fp-nav ul li{
+    display: none;
+}
+.fp-controlArrow.fp-prev{}
+.fp-controlArrow.fp-next{}
+
+/* ===========================메인========================== */
+/* ===========================홈============================== */
+#home{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#home .wrap{
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#home .wrap .top{
+    text-align: left;
+}
+
+#home .wrap .bottom{
+    text-align: left;
+}
+
+#home .wrap .top .copy{
+    font-size: 10px;
+    color: #888;
+}
+
+#home .wrap .top .design{
+    letter-spacing: 1px;
+    line-height: 0.5rem;
+}
+
+#home .wrap .bottom{
+    padding-top: 5%;
+    position: relative;
+}
+
+#home .wrap .bottom h1{
+    font-weight: lighter;
+    font-size: 9.5rem;
+    line-height: 0px;
+    letter-spacing: -10px;
+}
+
+#home .wrap .bottom p{
+    font-weight: lighter;
+    font-size: 11rem;
+    line-height: 5rem;
+    letter-spacing: 2rem;
+    position: absolute;
+    right: 0;
+    margin-top: 5%;
+}
+#home .coding{
+    width: 8%;
+    height: 95%;
+    position: absolute;
+    top: -10%; left: 46%;
+    border: .5rem solid #fff;
+    border-radius: 5rem;
+    z-index: 9;
+    background: url('../img/home.png')no-repeat;
+    background-position: left top;
+    background-size: cover;
+    animation: code 10s linear infinite;
+}
+
+
+@keyframes code{
+    0% {background-position: 20% top;}
+    100%{background-position: 80% top;}
+}
+
+#home span{
+    display: block;
+    width: 32%;
+    height: .5%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 20%;
+}
+
+
+/* ==========================목차INDEX========================= */
+
+
+#index{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/index.png') no-repeat center/cover;
+    position: relative;
+}
+
+#index .wrap{
+    width: 70%;
+    height: 35%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+#index .wrap .content01{
+    display: flex;
+    justify-content: space-around;
+}
+
+#index .wrap .content01 .number{
+    font-size: 4rem;
+    width: 20%;
+}
+
+#index .wrap .content01 .line{
+    width: 20%;
+    height: 1.5%;
+    background-color: #222;
+    margin-top: 8%;
+}
+
+#index .wrap .content02{
+    display: flex;
+    justify-content: space-around;
+}
+#index .wrap .content02 .number{
+    font-size: 4rem;
+    width: 30%;
+}
+
+#index .wrap .content02 .line{
+    width: 20%;
+    height: 1.5%;
+    background-color: #222;
+    margin-top: 8%;
+}
+
+#index .wrap .content03{
+    display: flex;
+    justify-content: space-around;
+}
+#index .wrap .content03 .number{
+    font-size: 4rem;
+    width: 20%;
+}
+#index .wrap .content03 .line{
+    width: 20%;
+    height: 1%;
+    background-color: #222;
+    margin-top: 8%;
+}
+#index .wrap .content04{
+    display: flex;
+    justify-content: space-around;
+}
+#index .wrap .content04 .number{
+    font-size: 4rem;
+    width: 30%;
+}
+#index .wrap .content04 .line{
+    width: 20%;
+    height: 1%;
+    background-color: #222;
+    margin-top: 8%;
+}
+
+#index .wrap .text{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+#index .right_text{
+    writing-mode: vertical-lr;
+    position: absolute;
+    right: -30%; top: 40%;
+    margin-left: 1rem;
+    width: 40%;
+}
+
+#about{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/about.png') no-repeat center/cover;
+    position: relative;
+}
+
+#about .wrap{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+#about .wrap .left{
+    width: 25%;
+    height: 100%;
+}
+
+#about .wrap .left .left_top{
+    width: 100%;
+    height: 25rem;
+    background-color: #000;
+    border-radius: 40rem;
+    color: #fff;
+}
+
+#about .wrap .left .left_top p{
+    color: orangered;
+    font-size: 2.5rem;
+    line-height: .5rem;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+#about .wrap .left .left_top p:first-child{
+    padding-top: 20%;
+}
+
+#about .wrap .left .left_top h1{
+    font-size: 3.5rem;
+    text-align: left;
+    line-height: 1rem;
+    padding-left: 30%;
+}
+
+#about .wrap .left .left_bottom{
+    display: flex;
+    margin-top: 10%;
+}
+
+#about .wrap .left .left_bottom .bottom_left{
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+    color: orangered;
+}
+
+#about .wrap .left .left_bottom .bottom_right{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+#about .wrap .middle{
+    width: 35%;
+    height: 70%;
+    padding-top: 2%;
+}
+
+#about .wrap .middle .img01{
+    width: 80%;
+    height: 30%;
+    background: url('../img/img01.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 3% auto;
+}
+#about .wrap .middle .img02{
+    width: 80%;
+    height: 45%;
+    background: url('../img/img02.png') no-repeat;
+    background-size: cover;
+    background-position: center 35%;
+    margin: 3% auto;
+}
+#about .wrap .middle .img03{
+    width: 80%;
+    height: 30%;
+    background: url('../img/img03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 45%;
+    margin: 3% auto;
+}
+
+#about .wrap .right_top{
+    width: 80%;
+    height: 50%;
+    margin-top: 7%;
+}
+
+#about .wrap .right_top .experience{
+    width: 100%;
+    height: 3rem;
+    background-color: #000;
+}
+
+#about .wrap .right_top .experience p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 2.8rem;
+}
+
+#about .wrap .right_top .text{
+    text-align: left;
+    font-size: 1.2rem;
+    margin-top: 10%;
+}
+
+#about .wrap .right_bottom{
+    width: 80%;
+    height: 20%;
+}
+
+#about .wrap .right_bottom .top_tag{
+    display: flex;
+}
+#about .wrap .right_bottom .bottom_tag{
+    display: flex;
+    margin-top: 1%;
+}
+
+#about .wrap .right_bottom .top_tag .tag01{
+    width: 20%;
+    padding: .5rem .5rem;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5rem;
+    margin-right: 1%;
+    margin-left: 15%;
+}
+#about .wrap .right_bottom .top_tag .tag02{
+    width: 30%;
+    padding: .5rem .5rem;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5rem;
+    white-space: nowrap;
+    margin-right: 1%;
+}
+#about .wrap .right_bottom .top_tag .tag03{
+    width: 10%;
+    padding: .5rem .5rem;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5rem;
+    white-space: nowrap;
+}
+#about .wrap .right_bottom .bottom_tag .tag04{
+    width: 20%;
+    padding: .5rem .5rem;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5rem;
+    white-space: nowrap;
+    margin-right: 1%;
+    margin-left: 25%;
+}
+#about .wrap .right_bottom .bottom_tag .tag05{
+    width: 27%;
+    padding: .5rem .5rem;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5rem;
+    white-space: nowrap;
+}
